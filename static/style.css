@@ -1,0 +1,232 @@
+/* Basic page setup */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1e293b;
+}
+
+/* Navigation bar */
+.navbar {
+    background: #172554;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.brand {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.nav-label {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+/* Main content */
+.container {
+    max-width: 1100px;
+    margin: 32px auto;
+    padding: 0 20px;
+}
+
+.page-heading {
+    margin-bottom: 26px;
+}
+
+.page-heading h1 {
+    margin-bottom: 8px;
+    color: #172554;
+}
+
+.page-heading p {
+    color: #64748b;
+    margin-top: 0;
+}
+
+/* Dashboard cards */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: white;
+    padding: 22px;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 14px #0f172a08;
+}
+
+.stat-card p {
+    margin: 0 0 10px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.stat-card h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.stat-total {
+    border-top: 4px solid #3b82f6;
+}
+
+.stat-pending {
+    border-top: 4px solid #f59e0b;
+}
+
+.stat-completed {
+    border-top: 4px solid #22c55e;
+}
+
+/* Form and content panels */
+.panel {
+    background: white;
+    padding: 25px;
+    margin-bottom: 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px #0f172a08;
+}
+
+.panel h2 {
+    margin-top: 0;
+    color: #172554;
+}
+
+label {
+    display: block;
+    margin: 16px 0 7px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font: inherit;
+    background: white;
+}
+
+input:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #3b82f6;
+}
+
+/* Buttons */
+button,
+.action {
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font: inherit;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.add-button {
+    background: #2563eb;
+    color: white;
+    margin-top: 20px;
+}
+
+.complete-button {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.delete-button {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+button:hover,
+.action:hover {
+    filter: brightness(0.96);
+}
+
+/* Task cards */
+.task-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.task {
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    overflow-wrap: anywhere;
+}
+
+.task h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.task p {
+    color: #475569;
+    font-size: 14px;
+}
+
+.status {
+    font-weight: 700;
+}
+
+.completed {
+    color: #15803d !important;
+}
+
+.pending {
+    color: #b45309 !important;
+}
+
+.empty {
+    padding: 24px;
+    text-align: center;
+    color: #64748b;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+/* Mobile-friendly layout */
+@media (max-width: 650px) {
+    .dashboard,
+    .task-list {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        padding: 16px 20px;
+    }
+
+    .container {
+        margin-top: 22px;
+        padding: 0 14px;
+    }
+
+    .panel {
+        padding: 18px;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+}
